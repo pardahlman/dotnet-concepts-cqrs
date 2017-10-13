@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Concept.Service.RabbitMq\Concept.Service.RabbitMq.csproj" />
+    <ProjectReference Include="..\Concept.Service\Concept.Service.csproj" />
+    <ProjectReference Include="..\Shop.Messages\Shop.Messages.csproj" />
+  </ItemGroup>
+
+</Project>
