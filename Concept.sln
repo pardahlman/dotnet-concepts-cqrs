@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Service", "Concept.Service\Concept.Service.csproj", "{F4B2E14B-E496-4B8A-BCED-D69DAC170505}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Service.ConsoleHost", "..\Concept.Service.ConsoleHost\Concept.Service.ConsoleHost.csproj", "{25A64BF5-498E-4587-89CB-50506E8E7706}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Service.WindowsService", "Concept.Service.WindowsService\Concept.Service.WindowsService.csproj", "{08E9B798-AF88-41B5-A42B-55671ABF8A0B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Service.Opinionated", "Concept.Service.Opinionated\Concept.Service.Opinionated.csproj", "{51795B60-AA0B-4513-AA04-AA437E161C78}"
@@ -45,13 +43,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.ConsoleClient", "Ex
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Write.RabbitMq", "Concept.Cqrs.Write.RabbitMq\Concept.Cqrs.Write.RabbitMq.csproj", "{E7F14150-3E6B-4C59-8F4D-EE8AEE59FBF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concept.Cqrs.Read.MongoDb", "Concept.Cqrs.Read.MongoDb\Concept.Cqrs.Read.MongoDb.csproj", "{7D03D100-77D1-452B-BCC4-9BB31DF1A2DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Read.MongoDb", "Concept.Cqrs.Read.MongoDb\Concept.Cqrs.Read.MongoDb.csproj", "{7D03D100-77D1-452B-BCC4-9BB31DF1A2DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concept.Cqrs.Write.MongoDb", "Concept.Cqrs.Write.MongoDb\Concept.Cqrs.Write.MongoDb.csproj", "{F980B433-2A8F-42DB-9AEA-F08344F0889E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Write.MongoDb", "Concept.Cqrs.Write.MongoDb\Concept.Cqrs.Write.MongoDb.csproj", "{F980B433-2A8F-42DB-9AEA-F08344F0889E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A4A79B28-4832-4F32-A2D1-02AB82F99911}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concept.Cqrs.Write.MongoDb.Tests", "Concept.Cqrs.Write.MongoDb.Tests\Concept.Cqrs.Write.MongoDb.Tests.csproj", "{7BC903CF-A49D-46EE-BFFF-806F668F9962}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Write.MongoDb.Tests", "Concept.Cqrs.Write.MongoDb.Tests\Concept.Cqrs.Write.MongoDb.Tests.csproj", "{7BC903CF-A49D-46EE-BFFF-806F668F9962}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Service.ConsoleHost", "Concept.Service.ConsoleHost\Concept.Service.ConsoleHost.csproj", "{C17483C5-C8F2-41C8-A857-5F73D960F127}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,10 +63,6 @@ Global
 		{F4B2E14B-E496-4B8A-BCED-D69DAC170505}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4B2E14B-E496-4B8A-BCED-D69DAC170505}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4B2E14B-E496-4B8A-BCED-D69DAC170505}.Release|Any CPU.Build.0 = Release|Any CPU
-		{25A64BF5-498E-4587-89CB-50506E8E7706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{25A64BF5-498E-4587-89CB-50506E8E7706}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{25A64BF5-498E-4587-89CB-50506E8E7706}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{25A64BF5-498E-4587-89CB-50506E8E7706}.Release|Any CPU.Build.0 = Release|Any CPU
 		{08E9B798-AF88-41B5-A42B-55671ABF8A0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{08E9B798-AF88-41B5-A42B-55671ABF8A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08E9B798-AF88-41B5-A42B-55671ABF8A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -143,13 +139,16 @@ Global
 		{7BC903CF-A49D-46EE-BFFF-806F668F9962}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BC903CF-A49D-46EE-BFFF-806F668F9962}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BC903CF-A49D-46EE-BFFF-806F668F9962}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C17483C5-C8F2-41C8-A857-5F73D960F127}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C17483C5-C8F2-41C8-A857-5F73D960F127}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C17483C5-C8F2-41C8-A857-5F73D960F127}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C17483C5-C8F2-41C8-A857-5F73D960F127}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F4B2E14B-E496-4B8A-BCED-D69DAC170505} = {F44F5F2A-D6AB-4823-8279-2E98F7BCF17F}
-		{25A64BF5-498E-4587-89CB-50506E8E7706} = {F44F5F2A-D6AB-4823-8279-2E98F7BCF17F}
 		{08E9B798-AF88-41B5-A42B-55671ABF8A0B} = {F44F5F2A-D6AB-4823-8279-2E98F7BCF17F}
 		{51795B60-AA0B-4513-AA04-AA437E161C78} = {F44F5F2A-D6AB-4823-8279-2E98F7BCF17F}
 		{E913EBC0-8A3F-42F5-96F2-9BCCD2E5CDE0} = {F44F5F2A-D6AB-4823-8279-2E98F7BCF17F}
@@ -170,6 +169,7 @@ Global
 		{F980B433-2A8F-42DB-9AEA-F08344F0889E} = {04CCE4D6-DC90-4019-BDC4-9B1F8318D718}
 		{A4A79B28-4832-4F32-A2D1-02AB82F99911} = {04CCE4D6-DC90-4019-BDC4-9B1F8318D718}
 		{7BC903CF-A49D-46EE-BFFF-806F668F9962} = {A4A79B28-4832-4F32-A2D1-02AB82F99911}
+		{C17483C5-C8F2-41C8-A857-5F73D960F127} = {F44F5F2A-D6AB-4823-8279-2E98F7BCF17F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {378F2949-FB87-404A-85CB-A3D7BFB5729F}
