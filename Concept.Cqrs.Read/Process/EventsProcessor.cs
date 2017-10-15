@@ -8,11 +8,11 @@ namespace Concept.Cqrs.Read.Process
 {
 	public class EventsProcessor : IEventProcessor
 	{
-		private readonly Dictionary<Type, List<IEventHandler>> _typeToHandlers;
+		private readonly Dictionary<Type, List<IEventDenormalizer>> _typeToDenormalizer;
 
-		public EventsProcessor(IEnumerable<IEventHandler> handlers)
+		public EventsProcessor(IEnumerable<IEventDenormalizer> denormalizers)
 		{
-			_typeToHandlers = handlers
+			_typeToDenormalizer = denormalizers
 				.GroupBy(h => h.GetSupportedEventType())
 				.ToDictionary(
 					h => h.Key,
@@ -23,11 +23,11 @@ namespace Concept.Cqrs.Read.Process
 		public async Task ProcessAsync(EventBase @event)
 		{
 			var eventType = @event.GetType();
-			if (!_typeToHandlers.ContainsKey(eventType))
+			if (!_typeToDenormalizer.ContainsKey(eventType))
 			{
 				return;
 			}
-			foreach (var handler in _typeToHandlers[eventType])
+			foreach (var handler in _typeToDenormalizer[eventType])
 			{
 				await handler.HandleAsync(@event);
 			}
@@ -35,7 +35,7 @@ namespace Concept.Cqrs.Read.Process
 
 		public List<Type> GetEventTypes()
 		{
-			return _typeToHandlers.Keys.ToList();
+			return _typeToDenormalizer.Keys.ToList();
 		}
 	}
 }

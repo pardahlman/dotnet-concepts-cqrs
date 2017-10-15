@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Concept.Cqrs.Write
 {
 	public interface IEventDispatcher
 	{
-		Task DispatchAsync(IEnumerable<UncommittedEvent> events);
+		Task DispatchAsync(IEnumerable<UncommittedEvent> events, CancellationToken ct = default(CancellationToken));
 	}
 
 	public class SilentEventDispatcher : IEventDispatcher
 	{
-		public Task DispatchAsync(IEnumerable<UncommittedEvent> events)
+		public Task DispatchAsync(IEnumerable<UncommittedEvent> events, CancellationToken ct = default(CancellationToken))
 		{
 			return Task.CompletedTask;
 		}
@@ -26,7 +27,7 @@ namespace Concept.Cqrs.Write
 			_dispatchFunc = dispatchFunc;
 		}
 
-		public async Task DispatchAsync(IEnumerable<UncommittedEvent> events)
+		public async Task DispatchAsync(IEnumerable<UncommittedEvent> events, CancellationToken ct = default(CancellationToken))
 		{
 			foreach (var @event in events)
 			{

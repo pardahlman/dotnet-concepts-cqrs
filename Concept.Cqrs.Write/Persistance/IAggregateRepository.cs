@@ -6,7 +6,7 @@ namespace Concept.Cqrs.Write.Persistance
 {
 	public interface IAggregateRepository : IAggregateReadRepository, IAggregateWriteRepository { }
 
-	public interface IAggregateReadRepository
+  public interface IAggregateReadRepository
 	{
 		Task<TAggregate> GetAsync<TAggregate>(Guid aggregateId) where TAggregate : AggregateBase;
 	}

@@ -8,4 +8,8 @@
     <ProjectReference Include="..\Concept.Cqrs\Concept.Cqrs.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
 </Project>

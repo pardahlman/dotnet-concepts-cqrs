@@ -35,13 +35,13 @@ namespace Concept.Cqrs.Write.Aggregate
 			Version = events.Any() ? events.Max(e => e.Version) : -1;
 		}
 
-		public void Commit()
-		{
-			CommittedEvents = Enumerable
-				.Concat(CommittedEvents, Enumerable.Select<UncommittedEvent, CommittedEvent>(_uncommitedEvents, e => new CommittedEvent(e.Version, e.Created, e.Event)))
-				.ToList()
-				.AsReadOnly();
-		}
+		//public void Commit()
+		//{
+		//	CommittedEvents = Enumerable
+		//		.Concat(CommittedEvents, Enumerable.Select<UncommittedEvent, CommittedEvent>(_uncommitedEvents, e => new CommittedEvent(e.Version, e.Created, e.Event)))
+		//		.ToList()
+		//		.AsReadOnly();
+		//}
 
 		public void ApplyEvents(IEnumerable<EventBase> events)
 		{

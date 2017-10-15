@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RawRabbit.Enrichers.MessageContext" Version="2.0.0-rc1" />
+    <PackageReference Include="RawRabbit.Operations.Publish" Version="2.0.0-rc1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Example.TodoApp.Domain\Example.TodoApp.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

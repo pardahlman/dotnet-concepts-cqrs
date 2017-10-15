@@ -31,7 +31,7 @@ namespace Concept.Service.RabbitMq
       {
         using (LogContext.PushProperty(nameof(ctx.GlobalExecutionId), ctx.GlobalExecutionId))
         using (LogContext.PushProperty(nameof(ctx.MessageId), ctx.MessageId))
-        using (Operation.Time("Consuming message {MessageType} with id {MessageId}", typeof(TMessage).Name))
+        using (Operation.Time("Consuming message {MessageType} with id {MessageId}", typeof(TMessage).Name, ctx.MessageId))
         {
           try
           {

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Concept.Cqrs.Write.MongoDb\Concept.Cqrs.Write.MongoDb.csproj" />
+    <ProjectReference Include="..\Concept.Cqrs.Write.RabbitMq\Concept.Cqrs.Write.RabbitMq.csproj" />
+    <ProjectReference Include="..\Concept.Service.RabbitMq\Concept.Service.RabbitMq.csproj" />
+    <ProjectReference Include="..\Example.TodoApp.Domain\Example.TodoApp.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

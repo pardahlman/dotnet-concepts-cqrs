@@ -16,9 +16,9 @@ namespace Concept.Cqrs.Write
 		private readonly IEventDispatcher _eventDispatcher;
 		private readonly IAggregateRepository _aggregateRepo;
 
-		public CommandsProcesser(List<ICommandHandler> commandHandlers, IEventDispatcher eventDispatcher, IAggregateRepository aggregateRepo)
+		public CommandsProcesser(IEnumerable<ICommandHandler> commandHandlers, IEventDispatcher eventDispatcher, IAggregateRepository aggregateRepo)
 		{
-			_commandHandlers = commandHandlers;
+			_commandHandlers = commandHandlers.ToList();
 			_eventDispatcher = eventDispatcher;
 			_aggregateRepo = aggregateRepo;
 		}

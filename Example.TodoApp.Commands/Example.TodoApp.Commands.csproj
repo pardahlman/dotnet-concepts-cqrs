@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Concept.Cqrs\Concept.Cqrs.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="V1\" />
+  </ItemGroup>
+
+</Project>

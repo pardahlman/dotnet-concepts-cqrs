@@ -54,7 +54,7 @@ namespace Concept.Cqrs.Write.EventStore
 			}
 			var type = _nameToType[eventData.EventType];
 			var eventBase = Deserialize(eventData.Data, type) as EventBase;
-			return new CommittedEvent(eventData.EventNumber, eventData.Created, eventBase);
+			return new CommittedEvent(eventData.EventNumber, eventData.Created, eventBase, eventData.EventStreamId);
 		}
 
 		public List<CommittedEvent> ToEvent(IEnumerable<RecordedEvent> eventData)

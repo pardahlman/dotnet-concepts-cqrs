@@ -4,7 +4,7 @@ using Concept.Cqrs.Read.Persistance;
 
 namespace Concept.Cqrs.Read.Denormalize
 {
-	public abstract class DenormalizerBase<TReadModel, TEvent> : IEventHandler
+	public abstract class DenormalizerBase<TReadModel, TEvent> : IEventDenormalizer
     where TEvent : EventBase where TReadModel : ReadModelBase
 	{
 		protected readonly IModelRepository<TReadModel> Repository;
