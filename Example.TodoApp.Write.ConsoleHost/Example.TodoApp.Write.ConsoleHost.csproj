@@ -6,7 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Concept.Service.ConsoleHost\Concept.Service.ConsoleHost.csproj" />
+    <PackageReference Include="Concept.Service.ConsoleHost" Version="0.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Example.TodoApp.Write\Example.TodoApp.Write.csproj" />
   </ItemGroup>
 

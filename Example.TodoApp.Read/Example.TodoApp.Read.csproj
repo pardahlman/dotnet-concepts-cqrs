@@ -5,9 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Concept.Service.RabbitMq" Version="0.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Concept.Cqrs.Read.MongoDb\Concept.Cqrs.Read.MongoDb.csproj" />
     <ProjectReference Include="..\Concept.Cqrs.Read.RabbitMq\Concept.Cqrs.Read.RabbitMq.csproj" />
-    <ProjectReference Include="..\Concept.Service.RabbitMq\Concept.Service.RabbitMq.csproj" />
     <ProjectReference Include="..\Example.TodoApp.Domain\Example.TodoApp.Domain.csproj" />
   </ItemGroup>
 

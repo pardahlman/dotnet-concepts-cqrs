@@ -3,14 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Service", "Concept.Service\Concept.Service.csproj", "{F4B2E14B-E496-4B8A-BCED-D69DAC170505}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Service.WindowsService", "Concept.Service.WindowsService\Concept.Service.WindowsService.csproj", "{08E9B798-AF88-41B5-A42B-55671ABF8A0B}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Service.Opinionated", "Concept.Service.Opinionated\Concept.Service.Opinionated.csproj", "{51795B60-AA0B-4513-AA04-AA437E161C78}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Service.RabbitMq", "Concept.Service.RabbitMq\Concept.Service.RabbitMq.csproj", "{E913EBC0-8A3F-42F5-96F2-9BCCD2E5CDE0}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{240ED3EC-C47D-4647-B88E-93ED25B7CDE3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs", "Concept.Cqrs\Concept.Cqrs.csproj", "{5464166B-626D-461B-BC86-579C3CC9674A}"
@@ -22,8 +14,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Write", "Concept.Cqrs.Write\Concept.Cqrs.Write.csproj", "{ECA6EC83-1D84-48D7-9511-BA243A8D1251}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Write.EventStore", "Concept.Cqrs.Write.EventStore\Concept.Cqrs.Write.EventStore.csproj", "{5EBC8E3F-C2F6-4EB4-94C3-F2B9D4AFF618}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{F44F5F2A-D6AB-4823-8279-2E98F7BCF17F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cqrs", "Cqrs", "{04CCE4D6-DC90-4019-BDC4-9B1F8318D718}"
 EndProject
@@ -51,30 +41,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A4A79B28
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Write.MongoDb.Tests", "Concept.Cqrs.Write.MongoDb.Tests\Concept.Cqrs.Write.MongoDb.Tests.csproj", "{7BC903CF-A49D-46EE-BFFF-806F668F9962}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Service.ConsoleHost", "Concept.Service.ConsoleHost\Concept.Service.ConsoleHost.csproj", "{C17483C5-C8F2-41C8-A857-5F73D960F127}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F4B2E14B-E496-4B8A-BCED-D69DAC170505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4B2E14B-E496-4B8A-BCED-D69DAC170505}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4B2E14B-E496-4B8A-BCED-D69DAC170505}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4B2E14B-E496-4B8A-BCED-D69DAC170505}.Release|Any CPU.Build.0 = Release|Any CPU
-		{08E9B798-AF88-41B5-A42B-55671ABF8A0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{08E9B798-AF88-41B5-A42B-55671ABF8A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{08E9B798-AF88-41B5-A42B-55671ABF8A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{08E9B798-AF88-41B5-A42B-55671ABF8A0B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{51795B60-AA0B-4513-AA04-AA437E161C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{51795B60-AA0B-4513-AA04-AA437E161C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{51795B60-AA0B-4513-AA04-AA437E161C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{51795B60-AA0B-4513-AA04-AA437E161C78}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E913EBC0-8A3F-42F5-96F2-9BCCD2E5CDE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E913EBC0-8A3F-42F5-96F2-9BCCD2E5CDE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E913EBC0-8A3F-42F5-96F2-9BCCD2E5CDE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E913EBC0-8A3F-42F5-96F2-9BCCD2E5CDE0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5464166B-626D-461B-BC86-579C3CC9674A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5464166B-626D-461B-BC86-579C3CC9674A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5464166B-626D-461B-BC86-579C3CC9674A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -139,19 +111,11 @@ Global
 		{7BC903CF-A49D-46EE-BFFF-806F668F9962}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BC903CF-A49D-46EE-BFFF-806F668F9962}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BC903CF-A49D-46EE-BFFF-806F668F9962}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C17483C5-C8F2-41C8-A857-5F73D960F127}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C17483C5-C8F2-41C8-A857-5F73D960F127}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C17483C5-C8F2-41C8-A857-5F73D960F127}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C17483C5-C8F2-41C8-A857-5F73D960F127}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{F4B2E14B-E496-4B8A-BCED-D69DAC170505} = {F44F5F2A-D6AB-4823-8279-2E98F7BCF17F}
-		{08E9B798-AF88-41B5-A42B-55671ABF8A0B} = {F44F5F2A-D6AB-4823-8279-2E98F7BCF17F}
-		{51795B60-AA0B-4513-AA04-AA437E161C78} = {F44F5F2A-D6AB-4823-8279-2E98F7BCF17F}
-		{E913EBC0-8A3F-42F5-96F2-9BCCD2E5CDE0} = {F44F5F2A-D6AB-4823-8279-2E98F7BCF17F}
 		{5464166B-626D-461B-BC86-579C3CC9674A} = {04CCE4D6-DC90-4019-BDC4-9B1F8318D718}
 		{591C265E-36D4-4597-A711-559F770DC449} = {04CCE4D6-DC90-4019-BDC4-9B1F8318D718}
 		{DCD22001-7031-45EE-B63A-6D6FC5DAAA50} = {04CCE4D6-DC90-4019-BDC4-9B1F8318D718}
@@ -169,7 +133,6 @@ Global
 		{F980B433-2A8F-42DB-9AEA-F08344F0889E} = {04CCE4D6-DC90-4019-BDC4-9B1F8318D718}
 		{A4A79B28-4832-4F32-A2D1-02AB82F99911} = {04CCE4D6-DC90-4019-BDC4-9B1F8318D718}
 		{7BC903CF-A49D-46EE-BFFF-806F668F9962} = {A4A79B28-4832-4F32-A2D1-02AB82F99911}
-		{C17483C5-C8F2-41C8-A857-5F73D960F127} = {F44F5F2A-D6AB-4823-8279-2E98F7BCF17F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {378F2949-FB87-404A-85CB-A3D7BFB5729F}
