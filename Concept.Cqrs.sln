@@ -3,41 +3,41 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{240ED3EC-C47D-4647-B88E-93ED25B7CDE3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "sample\Example", "{240ED3EC-C47D-4647-B88E-93ED25B7CDE3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs", "Concept.Cqrs\Concept.Cqrs.csproj", "{5464166B-626D-461B-BC86-579C3CC9674A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs", "src\Concept.Cqrs\Concept.Cqrs.csproj", "{5464166B-626D-461B-BC86-579C3CC9674A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Read", "Concept.Cqrs.Read\Concept.Cqrs.Read.csproj", "{591C265E-36D4-4597-A711-559F770DC449}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Read", "src\Concept.Cqrs.Read\Concept.Cqrs.Read.csproj", "{591C265E-36D4-4597-A711-559F770DC449}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Read.EventStore", "Concept.Cqrs.Read.EventStore\Concept.Cqrs.Read.EventStore.csproj", "{DCD22001-7031-45EE-B63A-6D6FC5DAAA50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Read.EventStore", "src\Concept.Cqrs.Read.EventStore\Concept.Cqrs.Read.EventStore.csproj", "{DCD22001-7031-45EE-B63A-6D6FC5DAAA50}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Write", "Concept.Cqrs.Write\Concept.Cqrs.Write.csproj", "{ECA6EC83-1D84-48D7-9511-BA243A8D1251}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Write", "src\Concept.Cqrs.Write\Concept.Cqrs.Write.csproj", "{ECA6EC83-1D84-48D7-9511-BA243A8D1251}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Write.EventStore", "Concept.Cqrs.Write.EventStore\Concept.Cqrs.Write.EventStore.csproj", "{5EBC8E3F-C2F6-4EB4-94C3-F2B9D4AFF618}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Write.EventStore", "src\Concept.Cqrs.Write.EventStore\Concept.Cqrs.Write.EventStore.csproj", "{5EBC8E3F-C2F6-4EB4-94C3-F2B9D4AFF618}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.TodoApp.Write", "Example.TodoApp.Write\Example.TodoApp.Write.csproj", "{88D2A47B-C959-4366-9977-09111F5F90F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.TodoApp.Write", "sample\Example.TodoApp.Write\Example.TodoApp.Write.csproj", "{88D2A47B-C959-4366-9977-09111F5F90F5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.TodoApp.Domain", "Example.TodoApp.Domain\Example.TodoApp.Domain.csproj", "{1A268658-A261-408D-BF5C-3ECDF2BAD56A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.TodoApp.Domain", "sample\Example.TodoApp.Domain\Example.TodoApp.Domain.csproj", "{1A268658-A261-408D-BF5C-3ECDF2BAD56A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.TodoApp.Read", "Example.TodoApp.Read\Example.TodoApp.Read.csproj", "{F892DD03-87AC-4D7F-AD78-ADBE0047514F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.TodoApp.Read", "sample\Example.TodoApp.Read\Example.TodoApp.Read.csproj", "{F892DD03-87AC-4D7F-AD78-ADBE0047514F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.TodoApp.Write.ConsoleHost", "Example.TodoApp.Write.ConsoleHost\Example.TodoApp.Write.ConsoleHost.csproj", "{055702CB-926A-4BBA-B644-24AE29AD2587}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.TodoApp.Write.ConsoleHost", "sample\Example.TodoApp.Write.ConsoleHost\Example.TodoApp.Write.ConsoleHost.csproj", "{055702CB-926A-4BBA-B644-24AE29AD2587}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Read.RabbitMq", "Concept.Cqrs.Read.RabbitMq\Concept.Cqrs.Read.RabbitMq.csproj", "{76EF0EF1-1B84-4061-B808-3A6731CBFD2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Read.RabbitMq", "src\Concept.Cqrs.Read.RabbitMq\Concept.Cqrs.Read.RabbitMq.csproj", "{76EF0EF1-1B84-4061-B808-3A6731CBFD2F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.TodoApp.Read.ConsoleHost", "Example.TodoApp.Read.ConsoleHost\Example.TodoApp.Read.ConsoleHost.csproj", "{62B4EAF6-2285-409D-9A63-EFF023D65088}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.TodoApp.Read.ConsoleHost", "sample\Example.TodoApp.Read.ConsoleHost\Example.TodoApp.Read.ConsoleHost.csproj", "{62B4EAF6-2285-409D-9A63-EFF023D65088}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.ConsoleClient", "Example.ConsoleClient\Example.ConsoleClient.csproj", "{FA2AE31F-099A-45FC-A2BC-B2BD78B9AD4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.ConsoleClient", "sample\Example.ConsoleClient\Example.ConsoleClient.csproj", "{FA2AE31F-099A-45FC-A2BC-B2BD78B9AD4F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Write.RabbitMq", "Concept.Cqrs.Write.RabbitMq\Concept.Cqrs.Write.RabbitMq.csproj", "{E7F14150-3E6B-4C59-8F4D-EE8AEE59FBF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Write.RabbitMq", "src\Concept.Cqrs.Write.RabbitMq\Concept.Cqrs.Write.RabbitMq.csproj", "{E7F14150-3E6B-4C59-8F4D-EE8AEE59FBF4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Read.MongoDb", "Concept.Cqrs.Read.MongoDb\Concept.Cqrs.Read.MongoDb.csproj", "{7D03D100-77D1-452B-BCC4-9BB31DF1A2DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Read.MongoDb", "src\Concept.Cqrs.Read.MongoDb\Concept.Cqrs.Read.MongoDb.csproj", "{7D03D100-77D1-452B-BCC4-9BB31DF1A2DD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Write.MongoDb", "Concept.Cqrs.Write.MongoDb\Concept.Cqrs.Write.MongoDb.csproj", "{F980B433-2A8F-42DB-9AEA-F08344F0889E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Write.MongoDb", "src\Concept.Cqrs.Write.MongoDb\Concept.Cqrs.Write.MongoDb.csproj", "{F980B433-2A8F-42DB-9AEA-F08344F0889E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A4A79B28-4832-4F32-A2D1-02AB82F99911}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Write.MongoDb.Tests", "Concept.Cqrs.Write.MongoDb.Tests\Concept.Cqrs.Write.MongoDb.Tests.csproj", "{7BC903CF-A49D-46EE-BFFF-806F668F9962}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs.Write.MongoDb.Tests", "test\Concept.Cqrs.Write.MongoDb.Tests\Concept.Cqrs.Write.MongoDb.Tests.csproj", "{7BC903CF-A49D-46EE-BFFF-806F668F9962}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

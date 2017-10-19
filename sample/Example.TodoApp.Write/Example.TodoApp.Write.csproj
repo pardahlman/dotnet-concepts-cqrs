@@ -9,8 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Concept.Cqrs.Write.MongoDb\Concept.Cqrs.Write.MongoDb.csproj" />
-    <ProjectReference Include="..\Concept.Cqrs.Write.RabbitMq\Concept.Cqrs.Write.RabbitMq.csproj" />
+    <ProjectReference Include="..\..\src\Concept.Cqrs.Write.MongoDb\Concept.Cqrs.Write.MongoDb.csproj" />
+    <ProjectReference Include="..\..\src\Concept.Cqrs.Write.RabbitMq\Concept.Cqrs.Write.RabbitMq.csproj" />
     <ProjectReference Include="..\Example.TodoApp.Domain\Example.TodoApp.Domain.csproj" />
   </ItemGroup>
 

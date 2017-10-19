@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Concept.Cqrs\Concept.Cqrs.csproj" />
+    <ProjectReference Include="..\..\src\Concept.Cqrs\Concept.Cqrs.csproj" />
   </ItemGroup>
 
 </Project>

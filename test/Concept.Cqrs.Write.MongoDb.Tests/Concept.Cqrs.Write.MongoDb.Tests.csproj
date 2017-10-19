@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Concept.Cqrs.Write.MongoDb\Concept.Cqrs.Write.MongoDb.csproj" />
+    <ProjectReference Include="..\..\src\Concept.Cqrs.Write.MongoDb\Concept.Cqrs.Write.MongoDb.csproj" />
   </ItemGroup>
 
 </Project>
