@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "sample\Example", "{240ED3EC-C47D-4647-B88E-93ED25B7CDE3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{240ED3EC-C47D-4647-B88E-93ED25B7CDE3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concept.Cqrs", "src\Concept.Cqrs\Concept.Cqrs.csproj", "{5464166B-626D-461B-BC86-579C3CC9674A}"
 EndProject
